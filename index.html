@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horus Estúdio de Tatuagem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Horus Estúdio de Tatuagem</h1>
+    <p>Arte eterna com alma egípcia</p>
+  </header>
+
+  <section>
+    <h2>Contato</h2>
+    <p>Fale com a gente no WhatsApp:</p>
+    <a class="btn-whatsapp" href="https://wa.me/5548998376613" target="_blank">Iniciar conversa</a>
+  </section>
+
+  <section>
+    <h2>Agendamento</h2>
+    <p>Preencha para solicitar seu horário:</p>
+    <form onsubmit="enviarAgendamento(event)">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="date" required>
+      <input type="time" required>
+      <textarea placeholder="Descreva a ideia da tatuagem" required></textarea>
+      <button type="submit">Enviar pedido de agendamento</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
